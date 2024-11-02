@@ -1,0 +1,536 @@
+/* Ajustes Gerais */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url("fundocinza.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #333;
+}
+
+#contatos{
+    display: flex;
+    font-family: "Corben", serif;
+    color: #FCEFBD;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+#forms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #2b2b2b;
+}
+
+#forms button{
+    width: 200px;
+    height: 50px;
+    margin-left: 66%;
+    background-color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+
+.form1{
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.form1 input{
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 7px solid #00B4CC;
+    
+}
+
+#grande{
+    height: 150px;
+}
+
+#nav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00B4CC;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+
+#welcome {
+    margin-left: 6.4vh;
+    color: #ffffff;
+    font-size: 8.2vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#tudo {
+    background-color:#343838;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    color: #00B4CC;
+    font-size: 7vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#subtitle {
+    color: #ffffff;
+    font-size: 5vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#foto img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+#sobre_mim{
+    border-radius: 15px; 
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2b;
+    margin: 20px auto;
+}
+#foto{
+display: flex;
+
+}
+#texto {
+    margin: 20px;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#HabilidadesT {
+   background-color: #343838;
+    color: #00B4CC;
+    font-size: 6vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#segunda {
+   
+    background-color: #2b2b2b;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.flip-card {
+    color: #ffffff;
+    margin: 20px;
+    border: 2px solid #00B4CC;
+    background-color: transparent;
+    width: 250px;
+    height: 375px;
+    perspective: 1000px;
+}
+
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: #333;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #00B4CC;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ogani{
+    background-image: url('ogani.png');
+
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#terceira{
+    background-image: url("fundopreto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+
+    padding: 50px;
+
+    color: #00B4CC;
+    font-size: 7vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.terceir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 10%;
+}
+#figma{
+    background-image: url(figmaSite.png);
+}
+#eliot{
+    background-image: url(eliot.png);
+}
+#proj{
+    margin-bottom: 10%;
+
+
+}
+#quarta{
+    background-color: #2b2b2b;
+    height: 75vh;
+
+}
+#contato{
+    color: #00B4CC;
+    font-size: 7vh;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#inuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+#rodape{
+    background-color: #ffffff8a;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #copy{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #icon svg{
+    height: 17px;
+    fill: black;
+    position: static;
+    margin-left: 2vh;
+  
+  }
+  #icon{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+ 
+
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode #nav {
+    background-color: #1c1c1c;
+}
+
+.dark-mode #nav li a {
+    color: #ffffff;
+}
+
+.dark-mode #welcome,
+.dark-mode #title,
+.dark-mode #subtitle {
+    color: #ffffff;
+}
+
+.dark-mode #forms {
+    background-color: #1c1c1c;
+}
+
+.dark-mode .form1 input {
+    color: #ffffff;
+    background-color: transparent;
+    border-bottom: 7px solid #227B94;
+}
+
+.dark-mode #HabilidadesT {
+    color: #227B94;
+}
+
+.dark-mode #segunda,
+.dark-mode .flip-card {
+    background-color: #1c1c1c;
+    border: 2px solid #227B94;
+}
+
+.dark-mode .flip-card-front {
+    background-color: #333;
+}
+
+.dark-mode .flip-card-back {
+    background-color: #227B94;
+}
+
+.dark-mode #terceira {
+    background-color: #1c1c1c;
+}
+
+.dark-mode .project-content {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.dark-mode #quarta {
+    background-color: #1c1c1c;
+}
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+   
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav li a {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+   
+    #welcome {
+        font-size: 5vh;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #title {
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    #subtitle {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    
+    #tudo {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    #foto img {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    #sobre_mim {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 0.5rem;
+    }
+
+  
+    #HabilidadesT {
+        font-size: 4.5vh;
+    }
+
+    #segunda {
+        padding: 10px;
+    }
+
+    .flip-card {
+        margin: 10px;
+    
+        width: 20vh;
+         height: 30vh;
+    }
+
+  
+    #terceira {
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+
+    #forms {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #forms button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .form1 {
+        width: 100%;
+    }
+
+
+    #rodape {
+        font-size: 0.8rem;
+        padding: 15px;
+        text-align: center;
+    }
+     
+     .flip-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+    }
+
+    .flip-card {
+        width: 30%; 
+        margin: 5px 0;
+    }
+
+    .flip-card-inner, .flip-card-front, .flip-card-back {
+        width: 100%;
+        height: 150px;
+    }
+    .flip-card-front, .flip-card-back {
+        font-size: 2vh;
+        padding: 1vh;
+      }
+    
+      .flip-card-container {
+        gap: 2vh;
+      }
+}
+

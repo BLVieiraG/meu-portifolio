@@ -1,0 +1,4 @@
+ <div id="input">
+                    <input type="text" name="" placeholder="What you need" id="inp">
+                    <button id="search">SEARCH</button>
+                </div>
